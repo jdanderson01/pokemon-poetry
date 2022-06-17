@@ -1,0 +1,63 @@
+/*imports normalize*/
+@import "normalize.css";
+
+img {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: paleturquoise;
+        grid-gap: 1px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: paleturquoise;
+        grid-gap: 3px;
+    }
+
+    .par {
+        grid-column: 1/ span 3;
+        padding: 5px;
+    }
+
+    .start {
+        grid-column: 1/ span 3;
+        padding: 5px;
+    }
+
+    .top {
+        grid-column: 1/ span 3;
+        margin-top: 20px;
+        padding: 5px;
+    }
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 1224px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: paleturquoise;
+        grid-gap: 1px;
+    }
+
+
+}
